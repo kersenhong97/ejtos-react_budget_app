@@ -17,7 +17,7 @@ const Budget = () => {
         }
 
         if (newBudget < totalExpenses) {
-            alert("You cannot reduce the budget value lower than the spending");
+            alert("The budget cannot be less than the spending");
             return;
         }
 
@@ -28,7 +28,7 @@ const Budget = () => {
     }
     return (
         <div className='alert alert-secondary'>
-             <span>Budget: {currency}
+            <span>Budget: {currency}
                 <input type="number" step="10" value={budget} onChange={handleBudgetChange}></input>
             </span>
         </div>
